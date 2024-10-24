@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Dolan - Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/beer-css@1.2.0/dist/beer.min.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -14,33 +15,19 @@
         }
 
         body {
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             color: #333;
             line-height: 1.6;
         }
 
         header {
-            background-color: #005f99;
-            color: #fff;
             padding: 60px 0;
             text-align: center;
-            animation: headerAnimation 5s infinite alternate;
-        }
-
-        @keyframes headerAnimation {
-            0% { background-color: #005f99; }
-            100% { background-color: #0077cc; }
         }
 
         .navbar {
-            background-color: #003f66;
+            background-color: #ff9800;
             padding: 10px 0;
-            animation: navbarSlideIn 2s;
-        }
-
-        @keyframes navbarSlideIn {
-            0% { transform: translateY(-100%); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
         }
 
         .navbar a {
@@ -48,11 +35,6 @@
             text-decoration: none;
             margin: 0 15px;
             font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .navbar a:hover {
-            color: #ffcc00;
         }
 
         .container {
@@ -70,13 +52,7 @@
         h2 {
             font-weight: 700;
             margin-bottom: 20px;
-            position: relative;
-            animation: fadeIn 3s;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
+            color: #ff9800;
         }
 
         .project {
@@ -85,46 +61,43 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-            transform: scale(1);
-            transition: transform 0.3s;
-        }
-
-        .project:hover {
-            transform: scale(1.05);
         }
 
         footer {
-            background-color: #003f66;
+            background-color: #ff9800;
             color: #fff;
             text-align: center;
             padding: 20px 0;
-            animation: footerBounce 4s infinite alternate;
         }
 
-        @keyframes footerBounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+        .beer-btn {
+            background-color: #ff9800;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
 
-        footer p {
-            margin: 0;
+        .beer-btn:hover {
+            background-color: #e68900;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Gabriel Dolan</h1>
-            <p>Data Scientist & Business Analyst</p>
+            <h1 class="beer-title">Gabriel Dolan</h1>
+            <p class="beer-subtitle">Data Scientist & Business Analyst</p>
         </div>
     </header>
 
     <nav class="navbar">
         <div class="container">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="beer-btn">About</a>
+            <a href="#skills" class="beer-btn">Skills</a>
+            <a href="#projects" class="beer-btn">Projects</a>
+            <a href="#contact" class="beer-btn">Contact</a>
         </div>
     </nav>
 
@@ -135,7 +108,7 @@
 
     <section id="skills" class="container">
         <h2>Skills</h2>
-        <ul>
+        <ul class="beer-list">
             <li>Data Analysis & Visualization</li>
             <li>Machine Learning & Predictive Modeling</li>
             <li>Programming Languages: Python, R, SQL</li>
@@ -146,11 +119,11 @@
 
     <section id="projects" class="container">
         <h2>Projects</h2>
-        <div class="project">
+        <div class="project beer-card">
             <h3>Cisco Logistics Analytics ML Model</h3>
             <p>Built a machine learning model to predict on-time delivery hits and implemented metrics to improve demand fulfillment using Power BI and Excel. Awarded 1st place at Cisco's Annual Supply Chain Intern Project Showcase.</p>
         </div>
-        <div class="project">
+        <div class="project beer-card">
             <h3>Bloomberg BPuzzled Global Finalist</h3>
             <p>Participated as a finalist in the Bloomberg BPuzzled competition, utilizing technical problem-solving skills to solve complex challenges collaboratively.</p>
         </div>
@@ -158,8 +131,8 @@
 
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:gabriel.dolan@example.com">gabriel.dolan@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/gabriel-dolan" target="_blank">linkedin.com/in/gabriel-dolan</a></p>
+        <p>Email: <a href="mailto:gabriel.dolan@example.com" class="beer-link">gabriel.dolan@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/gabriel-dolan" target="_blank" class="beer-link">linkedin.com/in/gabriel-dolan</a></p>
     </section>
 
     <footer>
@@ -169,3 +142,4 @@
     </footer>
 </body>
 </html>
+
