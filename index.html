@@ -24,11 +24,23 @@
             color: #fff;
             padding: 60px 0;
             text-align: center;
+            animation: headerAnimation 5s infinite alternate;
+        }
+
+        @keyframes headerAnimation {
+            0% { background-color: #005f99; }
+            100% { background-color: #0077cc; }
         }
 
         .navbar {
             background-color: #003f66;
             padding: 10px 0;
+            animation: navbarSlideIn 2s;
+        }
+
+        @keyframes navbarSlideIn {
+            0% { transform: translateY(-100%); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
         }
 
         .navbar a {
@@ -58,6 +70,13 @@
         h2 {
             font-weight: 700;
             margin-bottom: 20px;
+            position: relative;
+            animation: fadeIn 3s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         .project {
@@ -66,6 +85,12 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+            transform: scale(1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
         }
 
         footer {
@@ -73,6 +98,12 @@
             color: #fff;
             text-align: center;
             padding: 20px 0;
+            animation: footerBounce 4s infinite alternate;
+        }
+
+        @keyframes footerBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
         }
 
         footer p {
