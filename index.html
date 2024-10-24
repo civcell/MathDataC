@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gabriel Dolan - Professional Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -114,28 +115,28 @@
 <body>
     <header>
         <div class="container">
-            <h1>Gabriel Dolan</h1>
-            <p>Data Scientist & Business Analyst</p>
+            <h1 class="nes-text is-primary">Gabriel Dolan</h1>
+            <p class="nes-text is-light">Data Scientist & Business Analyst</p>
         </div>
     </header>
 
     <nav class="navbar">
         <div class="container">
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" class="nes-btn">About</a>
+            <a href="#skills" class="nes-btn">Skills</a>
+            <a href="#projects" class="nes-btn">Projects</a>
+            <a href="#contact" class="nes-btn">Contact</a>
         </div>
     </nav>
 
     <section id="about" class="container">
-        <h2>About Me</h2>
+        <h2 class="nes-text is-warning">About Me</h2>
         <p>I am a passionate data scientist with experience in data analysis, machine learning, and business analytics. My goal is to utilize data to drive innovation and create impactful solutions for businesses and communities.</p>
     </section>
 
     <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
+        <h2 class="nes-text is-warning">Skills</h2>
+        <ul class="nes-list is-disc">
             <li>Data Analysis & Visualization</li>
             <li>Machine Learning & Predictive Modeling</li>
             <li>Programming Languages: Python, R, SQL</li>
@@ -145,26 +146,26 @@
     </section>
 
     <section id="projects" class="container">
-        <h2>Projects</h2>
-        <div class="project">
+        <h2 class="nes-text is-warning">Projects</h2>
+        <div class="project nes-container is-rounded">
             <h3>Cisco Logistics Analytics ML Model</h3>
             <p>Built a machine learning model to predict on-time delivery hits and implemented metrics to improve demand fulfillment using Power BI and Excel. Awarded 1st place at Cisco's Annual Supply Chain Intern Project Showcase.</p>
         </div>
-        <div class="project">
+        <div class="project nes-container is-rounded">
             <h3>Bloomberg BPuzzled Global Finalist</h3>
             <p>Participated as a finalist in the Bloomberg BPuzzled competition, utilizing technical problem-solving skills to solve complex challenges collaboratively.</p>
         </div>
     </section>
 
     <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:gabriel.dolan@example.com">gabriel.dolan@example.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/gabriel-dolan" target="_blank">linkedin.com/in/gabriel-dolan</a></p>
+        <h2 class="nes-text is-warning">Contact</h2>
+        <p>Email: <a href="mailto:gabriel.dolan@example.com" class="nes-text is-primary">gabriel.dolan@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/gabriel-dolan" target="_blank" class="nes-text is-primary">linkedin.com/in/gabriel-dolan</a></p>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Gabriel Dolan. All rights reserved.</p>
+            <p class="nes-text is-light">&copy; 2024 Gabriel Dolan. All rights reserved.</p>
         </div>
     </footer>
 </body>
